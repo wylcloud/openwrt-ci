@@ -30,6 +30,7 @@ rsync scons squashfs-tools subversion swig texinfo uglifyjs upx-ucl unzip vim wg
 ```
 ### 1.首次编译
 ```bash
+git clone -b v23.05.0 --single-branch --depth=1 https://github.com/openwrt/openwrt.git
 git clone https://github.com/openwrt/openwrt -b openwrt-22.03 openwrt
 cd openwrt
 sed -i '$a src-git NueXini_Packages https://github.com/NueXini/NueXini_Packages.git' feeds.conf.default
